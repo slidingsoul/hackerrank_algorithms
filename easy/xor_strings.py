@@ -1,3 +1,5 @@
+# xor strings
+
 def strings_xor(s, t):
   res = ""
   for i in range(len(s)):
@@ -7,10 +9,10 @@ def strings_xor(s, t):
           res += '1'
 
   return res
-  
+
 def strings_xor_v2(s, t):
   res = ['0' if s[i] == t[i] else '1' for i in range(len(s))]
-  
+
   return "".join(res)
 
 def strings_xor_v3(s, t):

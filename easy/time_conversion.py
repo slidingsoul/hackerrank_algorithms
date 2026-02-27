@@ -1,3 +1,5 @@
+# time conversion
+
 def timeConversion(s):
   hour, minute, temp_second = s.split(":")
   hour = int(hour)

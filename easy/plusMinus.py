@@ -1,3 +1,5 @@
+# plus minus
+
 def plusMinus(arr):
   length = len(arr)
   pos, neg, zero = 0, 0, 0
@@ -9,7 +11,7 @@ def plusMinus(arr):
     else:
       zero += 1
   print(f"{(pos/length):.6f}\n{(neg/length):.6f}\n{(zero/length):.6f}")
-  
+
 
 
 arr = [-4, 3, -9, 0, 4, 1]

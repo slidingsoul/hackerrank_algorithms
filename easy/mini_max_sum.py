@@ -1,3 +1,5 @@
+# mini-max sum
+
 def miniMaxSum(arr):
   n = len(arr)
   sorted_arr = sorted(arr)

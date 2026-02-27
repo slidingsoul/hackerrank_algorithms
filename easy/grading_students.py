@@ -1,3 +1,5 @@
+# grading students
+
 def gradingStudents(grades):
   n = len(grades)
   for i in range(n):
@@ -5,7 +7,7 @@ def gradingStudents(grades):
       grades[i] = grades[i]
     elif (((grades[i] // 5) + 1) * 5) - grades[i] < 3:
       grades[i] = (((grades[i] // 5) + 1) * 5)
-  
+
   return grades
 
 grades = [73, 67, 38, 33]

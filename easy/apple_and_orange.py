@@ -1,3 +1,5 @@
+# apple and orange
+
 def countApplesAndOranges(s, t, a, b, apples, oranges):
   # Write your code here
   apples_fall = [x + a for x in apples]
@@ -5,7 +7,7 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
   res_apples = len([i for i in apples_fall if s <= i <= t])
   res_oranges = len([j for j in oranges_fall if s <= j <= t])
   print(f"{res_apples}\n{res_oranges}")
-  
+
 def countApplesAndOranges_v2(s, t, a, b, apples, oranges):
   res_apples = sum(1 for dist in apples if s <= a + dist <= t)
   res_oranges = sum(1 for dist in oranges if s <= b + dist <= t)
