@@ -17,6 +17,7 @@ def dayOfMonth(month, year):
       return 31
     else:
       return 30
+      
 def dayOfProgrammer(year):
   month = 1
   days = 0
@@ -26,3 +27,15 @@ def dayOfProgrammer(year):
     month += 1
     days += addend
   return(f"{256 - days}.{month:02d}.{year}")
+
+def dayOfProgrammer_v2(year):
+  if year == 1918:
+    return f"26.09.{year}"
+  if year <= 1917:
+    leap = isLeapYearJulian(year)
+  else:
+    leap = isLeapYearGregorian(year)
+  if leap:
+    return f"12.09.{year}"
+  else:
+    return f"13.09.{year}"
