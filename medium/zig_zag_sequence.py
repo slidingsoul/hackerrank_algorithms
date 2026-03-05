@@ -1,3 +1,6 @@
+# zig zag sequence
+# hashtag: debugging
+
 def findZigZagSequence(a, n):
   a.sort()
   mid = int((n + 1)/2) - 1
@@ -5,7 +8,6 @@ def findZigZagSequence(a, n):
   st = mid + 1
   ed = n - 2
   while(st <= ed):
-    print(st, ed)
     a[st], a[ed] = a[ed], a[st]
     st = st + 1
     ed = ed - 1
