@@ -17,7 +17,6 @@ def encryption(s):
     temp.append(sliced)
     start += column
     end += column
-  print(temp)
   for i in range(column):
     for strs in temp:
       if i < len(strs):
