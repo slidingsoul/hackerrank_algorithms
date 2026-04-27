@@ -5,7 +5,13 @@ def extraLongFactorials(n):
     return 1
   return n * extraLongFactorials(n - 1)
 
-if __name__ == '__main__':
-  n = int(input().strip())
+def extraLongFactorials_v2(start: int) -> None:
+  result = start
+  for i in range(start - 1, 0, -1):
+    result *= i
+  print(result)
 
-  print(extraLongFactorials(n))
+if __name__ == '__main__':
+  # n = int(input().strip())
+
+  print(extraLongFactorials_v2(25))

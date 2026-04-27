@@ -24,8 +24,16 @@ def diagonalDifference_v2(arr):
 
   return abs(left_sum - right_sum)
 
+def diagonalDifference_v3(arr: list[list[int]]) -> int:
+  square_size = len(arr)
+  left_to_right_diag, right_to_left_diag = 0, 0
+  for i in range(square_size):
+    left_to_right_diag += arr[i][i]
+    right_to_left_diag += arr[i][square_size - i - 1]
+  absolute_difference = abs(left_to_right_diag - right_to_left_diag)
+  return absolute_difference
 
 
 arr = [[11, 2, 4], [4, 5, 6], [10, 8, -12]]
 
-print(diagonalDifference_v2(arr))
+print(diagonalDifference_v3(arr))

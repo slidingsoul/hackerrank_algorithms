@@ -16,5 +16,12 @@ def staircase_v2(n):
     hashes = "#" * (n - i + 1)
     print(f"{spaces}{hashes}")
 
+def staircase_v3(height: int) -> None:
+  for i in range(height):
+    spaces = height - i - 1
+    hashtags = i + 1
+    print(" " * spaces, end="")
+    print("#" * hashtags)
+
 n = 6
-staircase_v2(n)
+staircase_v3(n)
