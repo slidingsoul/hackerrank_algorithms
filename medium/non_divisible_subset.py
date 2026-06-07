@@ -1,3 +1,4 @@
+# non divisible subset
 def nonDivisibleSubset(k, s):
   remainder = [0] * k
   for i in s:

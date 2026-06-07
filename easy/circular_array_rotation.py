@@ -1,3 +1,5 @@
+# circular array rotation
+
 def circularArrayRotation(a, k, queries):
   new_arr = a[:]
   for n in range(len(a)):
